@@ -3,7 +3,7 @@
 * [Introduction](#introduction)
 * [Technologies](#technologies)
 * [Librabry](#library)
-* [How to get full soure code](#how-to-get-full-source-code)
+* [How to get full source code](#how-to-get-full-source-code)
 * [Contributes](#contributes)
 # Introduction
 A demo simple project with login google and use docker basic to build.
@@ -52,7 +52,7 @@ Backend:
 ```js
   npm install http-status-codes bcrypt cors dotenv express async-exit-hook
 ```
-# How to get full soure code
+# How to get full source code
 ## 1.Create folder in your pc.
 ## 2.Clone project:
   ```js
