@@ -1,0 +1,38 @@
+services:
+    mongo:
+      image: mongo:latest
+      ports:
+      - "27018:27017"
+      volumes: 
+        - mongo-data:/data/db
+    backend: 
+      build:
+      #dockerfile direction in project
+        context: ./backend
+      #specific the dockerfile if there multiple dockerfile
+        dockerfile: Dockerfile.dev
+      ports: 
+        - "3000:3000"
+      env_file: 
+        - ./backend/.env
+      volumes:
+      #Save all your file code in volume when any changes => rebuild automatically
+        - ./backend:/app
+        - /app/node_modules
+      depends_on:
+        - mongo
+    frontend:
+        build:
+          context: ./frontend/auth0-client
+          dockerfile: dockerfile
+        ports:
+          - "5173:5173"
+        env_file:
+          - ./frontend/auth0-client/.env
+        volumes:
+          - ./frontend/auth0-client:/app
+          - /app/node_modules
+        depends_on:
+          - backend
+volumes: 
+  mongo-data:

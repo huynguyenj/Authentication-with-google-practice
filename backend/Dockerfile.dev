@@ -1,0 +1,12 @@
+FROM node:22
+
+WORKDIR /app
+COPY package*.json ./
+
+RUN npm install
+
+#No need to use COPY . . to copy all source code we will config it with volume in dockercompose
+# COPY . .
+EXPOSE 3000
+
+CMD [ "npm", "start"]
