@@ -12,41 +12,41 @@ Core technologies are using in this project:
 * Docker
 * MongoDB
 # Library
-*Frontend:
-** Style
+Frontend:
+* Style
 ```js
 `npm install @tailwindcss/vite
 ```
-** Google
+* Google
 ```js
   npm install @react-oauth/google
 ```
-** Get data
+* Get data
 ```js
   npm install axios
 ```
-** Store with redux toolkit
+* Store with redux toolkit
 ```js
   npm install react-redux @reduxjs/toolkit
 ```
-*Backend:
-** Database with MongoDB
+Backend:
+* Database with MongoDB
 ```js
 `npm install mongoose
 ```
-** Cookie for refresh token
+* Cookie for refresh token
 ```js
   npm install cookie-parser
 ```
-** Google
+* Google
 ```js
   npm install google-auth-library
 ```
-** JWT token
+* JWT token
 ```js
   npm install jsonwebtoken
 ```
-** Others extends
+* Others extends
 ```js
   npm install http-status-codes bcrypt cors dotenv express async-exit-hook
 ```
@@ -81,10 +81,10 @@ Core technologies are using in this project:
 * Create file .env to create variables like in file .env.example for test use your own MongoDB compass URI first to test, clientID and google secret from google provided when create credential on google cloud.
 ### 3.3: Test the project
 ### 4.Run project with docker
-* Backend .env set up
-** Change MONGO_URI match to the port in docker-compose-dev.yaml at mongo set up: mongodb://mongo:27017/authDB
-* Run docker
-** Using this command
+Backend .env set up
+* Change MONGO_URI match to the port in docker-compose-dev.yaml at mongo set up: mongodb://mongo:27017/authDB
+Run docker
+* Using this command
   ```js
     #First time build or change some thing big in project like install new library or create more folder and file.
     docker-compose -f dockercompose-dev.yaml up --build
