@@ -3,6 +3,8 @@
 * [Introduction](#introduction)
 * [Technologies](#technologies)
 * [Librabry](#library)
+* [How to get full soure code](#how_to_get_full_source_code)
+* [Contributes](#contributes)
 # Introduction
 A demo simple project with login google and use docker basic to build.
 # Technologies
@@ -15,7 +17,7 @@ Core technologies are using in this project:
 Frontend:
 * Style
 ```js
-`npm install @tailwindcss/vite
+npm install @tailwindcss/vite
 ```
 * Google
 ```js
