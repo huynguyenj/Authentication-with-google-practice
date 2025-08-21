@@ -3,15 +3,15 @@
 * [Introduction](#introduction)
 * [Technologies](#technologies)
 * [Librabry](#library)
-## Introduction
+# Introduction
 A demo simple project with login google and use docker basic to build.
-## Technologies
+# Technologies
 Core technologies are using in this project:
 * Reactjs
 * Nodejs, Expressjs
 * Docker
 * MongoDB
-## Library
+# Library
 *Frontend:
 ** Style
 ```js
@@ -50,14 +50,14 @@ Core technologies are using in this project:
 ```js
   npm install http-status-codes bcrypt cors dotenv express async-exit-hook
 ```
-## How to get full soure code
-### 1.Create folder in your pc.
-### 2.Clone project:
+# How to get full soure code
+## 1.Create folder in your pc.
+## 2.Clone project:
   ```js
     git clone https://github.com/huynguyenj/Authentication-with-google-practice.git
 ```
-### 3.Config project
-####3.1: Frontend
+## 3.Config project
+### 3.1: Frontend
 * Open terminal and access to folder
   ```js
     cd frontend/auth0-client
@@ -68,7 +68,7 @@ Core technologies are using in this project:
     npm run dev
   ```
 * Create file .env and create variable like in .env.example to store clientID  from google provided when create credential on google cloud, server endpoint like http://localhost:3000 depend on you in this project will use that endpoint and yout PORT.
-####3.2: Backend
+### 3.2: Backend
 * Open terminal and access to folder
   ```js
     cd backend
@@ -79,7 +79,7 @@ Core technologies are using in this project:
     npm start
   ```
 * Create file .env to create variables like in file .env.example for test use your own MongoDB compass URI first to test, clientID and google secret from google provided when create credential on google cloud.
-###3.3: Test the project
+### 3.3: Test the project
 ### 4.Run project with docker
 * Backend .env set up
 ** Change MONGO_URI match to the port in docker-compose-dev.yaml at mongo set up: mongodb://mongo:27017/authDB
@@ -99,7 +99,7 @@ Core technologies are using in this project:
     ```js
      docker-compose -f dockercompose-dev.yaml down
   ```
-##Contributes
+# Contributes
 - You can create a brance then update on your own.
 - Contact to me through gmail: nguyenhuyjobs@gmail.com to inform.
   
